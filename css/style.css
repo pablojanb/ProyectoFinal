@@ -96,7 +96,6 @@ footer .copyright {
   }
 }
 /* fin title */
-/* inicio index:main/cards */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -126,8 +125,7 @@ main .tarjeta p {
 main .tarjeta p span {
   color: rgb(255, 165, 0);
 }
-
-.tarjeta__video {
+main .tarjeta .tarjeta--telecaster .tarjeta__video {
   width: 100%;
 }
 
@@ -221,8 +219,6 @@ main .tarjeta p span {
     height: 300px;
   }
 }
-/* fin index:main/cards */
-/* inicio productos */
 .card {
   margin-bottom: 10px;
   border: none;
@@ -266,8 +262,6 @@ main .tarjeta p span {
     font-size: 20px;
   }
 }
-/* fin productos */
-/* inicio nosotros */
 .nosotros {
   margin: 30px;
 }
@@ -287,8 +281,6 @@ main .tarjeta p span {
   font-family: "Oswald", sans-serif;
 }
 
-/* fin nosotros */
-/* inicio clientes */
 .clientes h2 {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -450,8 +442,6 @@ main .tarjeta p span {
     height: 400px;
   }
 }
-/* fin clientes */
-/* inicio contacto */
 .h2contacto {
   text-align: center;
   margin-bottom: 40px;
@@ -529,6 +519,5 @@ main .tarjeta p span {
     height: 300px;
   }
 }
-/* fin contacto */
 
 /*# sourceMappingURL=style.css.map */
