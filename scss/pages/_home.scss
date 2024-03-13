@@ -4,51 +4,83 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.tarjeta {
-    width: 80%;
+    .tarjeta {
+        width: 80%;
+        img {
+            width: 100%;
+        }
+        .tarjeta__desc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            padding: 10px;
+            audio {
+                width: 100%;
+            }
+        }
+        p {
+            font-family: "Oswald", sans-serif;
+            width: 100%;
+            text-align: center;
+            span {
+                color: rgb(255, 165, 0);
+            }
+        }
+    }
 }
 
-.tarjeta img {
+.tarjeta__video {
     width: 100%;
 }
 
-.tarjeta__desc {
+.calltoaction {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    padding: 10px;
-}
-
-.tarjeta__desc p {
-    font-family: "Oswald", sans-serif;
-    width: 100%;
-    text-align: center;
-}
-
-.tarjeta__desc p span {
-    color: rgb(255, 165, 0);
+    align-items: center;
+    height: 200px;
+    background-image: url(../images/blackwhite.jpg);
+    background-size: cover;
+    background-position: center;
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        color: rgb(255, 255, 255);
+        background-color: rgba(128, 128, 128, .3);
+        padding: 10px;
+        border-radius: 10%;
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgb(255, 165, 0);
+            padding: 5px 20px;
+            border-radius: 5%;
+            text-align: end;
+            &:hover {
+                background-color: rgb(128, 128, 128);
+                transform: scale(1.2);
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 480px) {
     .tarjeta__desc p {
         font-size: 20px;
     }
-}
-
-@media only screen and (min-width: 800px) {
-    .tarjeta__desc p {
-        font-size: 30px;
+    .tarjeta__video {
+        height: 250px;
     }
-}
-
-.tarjeta__desc audio {
-    width: 100%;
-}
-
-.tarjeta__video {
-    width: 100%;
+    .calltoaction p {
+        font-size: 19px;
+    }
+    .calltoaction p a {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -68,19 +100,21 @@ main {
     .tarjeta__desc audio {
         width: 200px;
     }
-} 
-
-@media only screen and (min-width: 480px) {
-    .tarjeta__video {
-        height: 250px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
     .tarjeta__video {
         width: 50%;
     }
+} 
 
+@media only screen and (min-width: 800px) {
+    .tarjeta__desc p {
+        font-size: 30px;
+    }
+    .calltoaction p {
+        font-size: 25px;
+    }
+    .calltoaction {
+        height: 250px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -91,67 +125,9 @@ main {
     .tarjeta__desc audio {
         width: 350px;
     }
-}
-
-.calltoaction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-image: url(../images/blackwhite.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.calltoaction p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    color: rgb(255, 255, 255);
-    background-color: rgba(128, 128, 128, .3);
-    padding: 10px;
-    border-radius: 10%;
-    font-size: 18px;
-    font-family: "Oswald", sans-serif;
-}
-
-@media only screen and (min-width: 480px) {
-    .calltoaction p {
-        font-size: 19px;
-    }
-    .calltoaction p a {
-        font-size: 19px;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .calltoaction p {
-        font-size: 25px;
-    }
-    .calltoaction {
-        height: 250px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
     .calltoaction {
         height: 300px;
     }
-}
-
-.calltoaction p a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: rgb(255, 165, 0);
-    padding: 5px 20px;
-    border-radius: 5%;
-    text-align: end;
-}
-
-.calltoaction p a:hover {
-    background-color: rgb(128, 128, 128);
-    transform: scale(1.2);
 }
 
 /* fin index:main/cards */

@@ -22,25 +22,21 @@
 }
 
 /* inicio header */
-header .bg-color {
-  background-color: rgb(255, 165, 0);
-}
-
-.nav-link {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-}
-
-header span {
-  color: rgb(128, 128, 128);
-}
-
 header {
   font-size: 25px;
 }
-
+header span {
+  color: rgb(128, 128, 128);
+}
+header .bg-color {
+  background-color: rgb(255, 165, 0);
+}
 header .navbar-brand {
   font-size: 25px;
+}
+header .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
 /* fin header */
@@ -50,25 +46,21 @@ footer {
   text-align: center;
   padding: 5px;
 }
-
 footer .redes {
   word-spacing: 30px;
   font-size: 25px;
 }
-
 footer .redes a {
   color: rgb(255, 255, 255);
 }
-
+footer .redes a i:hover {
+  color: rgb(128, 128, 128);
+  transform: scale(1.4);
+}
 footer .copyright {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-}
-
-footer .redes a i:hover {
-  color: rgb(128, 128, 128);
-  transform: scale(1.4);
 }
 
 /* fin footer */
@@ -77,11 +69,9 @@ footer .redes a i:hover {
   margin-top: 80px;
   text-align: center;
 }
-
 .title h1 {
   color: rgb(255, 165, 0);
 }
-
 .title p {
   margin-top: -10px;
   color: rgb(128, 128, 128);
@@ -112,51 +102,83 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.tarjeta {
+main .tarjeta {
   width: 80%;
 }
-
-.tarjeta img {
+main .tarjeta img {
   width: 100%;
 }
-
-.tarjeta__desc {
+main .tarjeta .tarjeta__desc {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   padding: 10px;
 }
-
-.tarjeta__desc p {
+main .tarjeta .tarjeta__desc audio {
+  width: 100%;
+}
+main .tarjeta p {
   font-family: "Oswald", sans-serif;
   width: 100%;
   text-align: center;
 }
-
-.tarjeta__desc p span {
+main .tarjeta p span {
   color: rgb(255, 165, 0);
-}
-
-@media only screen and (min-width: 480px) {
-  .tarjeta__desc p {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .tarjeta__desc p {
-    font-size: 30px;
-  }
-}
-.tarjeta__desc audio {
-  width: 100%;
 }
 
 .tarjeta__video {
   width: 100%;
 }
 
+.calltoaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url(../images/blackwhite.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.calltoaction p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 10px;
+  border-radius: 10%;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+.calltoaction p a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(255, 165, 0);
+  padding: 5px 20px;
+  border-radius: 5%;
+  text-align: end;
+}
+.calltoaction p a:hover {
+  background-color: rgb(128, 128, 128);
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 480px) {
+  .tarjeta__desc p {
+    font-size: 20px;
+  }
+  .tarjeta__video {
+    height: 250px;
+  }
+  .calltoaction p {
+    font-size: 19px;
+  }
+  .calltoaction p a {
+    font-size: 19px;
+  }
+}
 @media only screen and (min-width: 600px) {
   .tarjeta {
     display: flex;
@@ -172,15 +194,19 @@ main {
   .tarjeta__desc audio {
     width: 200px;
   }
-}
-@media only screen and (min-width: 480px) {
-  .tarjeta__video {
-    height: 250px;
-  }
-}
-@media only screen and (min-width: 600px) {
   .tarjeta__video {
     width: 50%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .tarjeta__desc p {
+    font-size: 30px;
+  }
+  .calltoaction p {
+    font-size: 25px;
+  }
+  .calltoaction {
+    height: 250px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -191,65 +217,10 @@ main {
   .tarjeta__desc audio {
     width: 350px;
   }
-}
-.calltoaction {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background-image: url(../images/blackwhite.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.calltoaction p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  color: rgb(255, 255, 255);
-  background-color: rgba(128, 128, 128, 0.3);
-  padding: 10px;
-  border-radius: 10%;
-  font-size: 18px;
-  font-family: "Oswald", sans-serif;
-}
-
-@media only screen and (min-width: 480px) {
-  .calltoaction p {
-    font-size: 19px;
-  }
-  .calltoaction p a {
-    font-size: 19px;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .calltoaction p {
-    font-size: 25px;
-  }
-  .calltoaction {
-    height: 250px;
-  }
-}
-@media only screen and (min-width: 1024px) {
   .calltoaction {
     height: 300px;
   }
 }
-.calltoaction p a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background-color: rgb(255, 165, 0);
-  padding: 5px 20px;
-  border-radius: 5%;
-  text-align: end;
-}
-
-.calltoaction p a:hover {
-  background-color: rgb(128, 128, 128);
-  transform: scale(1.2);
-}
-
 /* fin index:main/cards */
 /* inicio productos */
 .card {
