@@ -227,33 +227,38 @@ main .tarjeta p span {
   margin-bottom: 10px;
   border: none;
 }
-
 .card .acercar {
   overflow: hidden;
   text-align: center;
 }
-
-.card img {
+.card .acercar img {
   height: 330px;
   width: auto;
   object-fit: contain;
   transition: 2s;
 }
-
-.card img:hover {
+.card .acercar img:hover {
   transform: scale(1.4);
 }
-
-.card-title {
+.card .card-body h2 {
+  font-size: 30px;
+}
+.card .card-body .card-title {
   color: rgb(255, 165, 0);
 }
-
-.card-text {
+.card .card-body .card-text {
   font-family: "Oswald", sans-serif;
 }
-
-.card-body h2 {
-  font-size: 30px;
+.card .card-body a {
+  color: rgb(255, 165, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 20px;
+}
+.card .card-body a:hover {
+  transform: scale(1.4);
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 165, 0);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -261,42 +266,25 @@ main .tarjeta p span {
     font-size: 20px;
   }
 }
-.card-body a {
-  color: rgb(255, 165, 0);
-  background-color: rgb(255, 255, 255);
-  border: none;
-  font-size: 20px;
-}
-
-.card-body a:hover {
-  transform: scale(1.4);
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 165, 0);
-}
-
 /* fin productos */
 /* inicio nosotros */
 .nosotros {
   margin: 30px;
 }
-
 .nosotros h3 {
   color: rgb(255, 165, 0);
   font-family: "Oswald", sans-serif;
 }
-
+.nosotros p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
 .nosotros .cita {
   margin: 50px 0;
   text-align: center;
 }
-
 .nosotros .cita strong {
   font-family: "Oswald", sans-serif;
-}
-
-.nosotros p {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
 }
 
 /* fin nosotros */
@@ -484,53 +472,45 @@ main .tarjeta p span {
   font-family: "Oswald", sans-serif;
 }
 
-.contacto {
+.srcontact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.srcontact .contacto {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-bottom: 30px;
   margin: 10px;
 }
-
-form {
+.srcontact .contacto form {
   font-family: "Oswald", sans-serif;
 }
-
-form label {
+.srcontact .contacto form label {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
-
-.botones {
+.srcontact .contacto form .botones {
   display: flex;
   justify-content: center;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
-
-.botones input {
+.srcontact .contacto form .botones input {
   margin: -15px 20px;
   padding: 0 20px;
   margin-bottom: 25px;
 }
-
-.info {
+.srcontact .info {
   text-align: center;
 }
-
-.info strong {
-  font-family: "Oswald", sans-serif;
-}
-
-.info iframe {
+.srcontact .info iframe {
   margin-bottom: 20px;
 }
-
-.srcontact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.srcontact .info strong {
+  font-family: "Oswald", sans-serif;
 }
 
 @media only screen and (min-width: 576px) {
@@ -549,18 +529,18 @@ form label {
   .srcontact .contacto {
     width: 60vw;
   }
+  .srcontact .contacto form textarea {
+    width: 400px;
+  }
+  .srcontact .contacto form input:not(.botonForm) {
+    width: 300px;
+  }
   .srcontact .info {
     width: 40vw;
   }
-  .info iframe {
+  .srcontact .info iframe {
     margin-bottom: 50px;
     height: 300px;
-  }
-  .contacto form input:not(.botonForm) {
-    width: 300px;
-  }
-  textarea {
-    width: 400px;
   }
 }
 /* fin contacto */
