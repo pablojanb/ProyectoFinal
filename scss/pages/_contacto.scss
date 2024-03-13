@@ -6,53 +6,45 @@
     font-family: "Oswald", sans-serif;
 }
 
-.contacto {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin: 10px;
-}
-
-form {
-    font-family: "Oswald", sans-serif;
-}
-
-form label {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-}
-
-.botones {
-    display: flex;
-    justify-content: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-}
-
-.botones input  {
-    margin: -15px 20px;
-    padding: 0 20px;
-    margin-bottom: 25px;
-}
-
-.info {
-    text-align: center;
-}
-
-.info strong {
-    font-family: "Oswald", sans-serif;
-}
-
-.info iframe {
-    margin-bottom: 20px;
-}
-
 .srcontact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    .contacto {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin: 10px;
+        form {
+            font-family: "Oswald", sans-serif;
+            label {
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+            }
+            .botones {
+                display: flex;
+                justify-content: center;
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+                input  {
+                    margin: -15px 20px;
+                    padding: 0 20px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .info {
+        text-align: center;
+        iframe {
+            margin-bottom: 20px;
+        }
+        strong {
+            font-family: "Oswald", sans-serif;
+        }
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -60,36 +52,35 @@ form label {
         gap: 30px;
     }
     
-    .info iframe {
-        margin-bottom: 50px;
-        height: 300px;
+    .info {
+        iframe {
+            margin-bottom: 50px;
+            height: 300px;
+        }
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .srcontact {
         flex-wrap: nowrap;
-    }
-
-    .srcontact .contacto {
-        width: 60vw;
-    }
-
-    .srcontact .info {
-        width: 40vw;
-    }
-    
-    .info iframe {
-        margin-bottom: 50px;
-        height: 300px;
-    }
-
-    .contacto form input:not(.botonForm) {
-        width: 300px;
-    }
-
-    textarea {
-        width: 400px;
+        .contacto {
+            width: 60vw;
+            form {
+                textarea {
+                    width: 400px;
+                }
+                input:not(.botonForm) {
+                    width: 300px;
+                }
+            }
+        }
+        .info {
+            width: 40vw;
+            iframe {
+                margin-bottom: 50px;
+                height: 300px;
+            }
+        }
     }
 }
 

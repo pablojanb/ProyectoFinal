@@ -2,25 +2,21 @@
 
 .nosotros {
     margin: 30px;
-}
-
-.nosotros h3 {
-    color: rgb(255, 165, 0);
-    font-family: "Oswald", sans-serif;
-}
-
-.nosotros .cita{
-    margin: 50px 0;
-    text-align: center;
-}
-
-.nosotros .cita strong {
-    font-family: "Oswald", sans-serif;
-}
-
-.nosotros p {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    h3 {
+        color: rgb(255, 165, 0);
+        font-family: "Oswald", sans-serif;
+    }
+    p {
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+    }
+    .cita{
+        margin: 50px 0;
+        text-align: center;
+        strong {
+            font-family: "Oswald", sans-serif;
+        }
+    }
 }
 
 /* fin nosotros */
