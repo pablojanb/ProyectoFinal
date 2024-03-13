@@ -1,0 +1,92 @@
+/* inicio header */
+
+header .bg-color {
+    background-color: rgb(255, 165, 0);
+}
+
+.nav-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+header span {
+    color: rgb(128, 128, 128);
+}
+
+header {
+    font-size: 25px;
+}
+
+header .navbar-brand {
+    font-size: 25px;
+}
+
+/* fin header */
+
+/* inicio footer */
+
+footer {
+    background-color: rgb(255, 165, 0);
+    text-align: center;
+    padding: 5px;
+}
+
+footer .redes {
+    word-spacing: 30px;
+    font-size: 25px;
+}
+
+footer .redes a {
+    color: rgb(255, 255, 255);
+}
+
+footer .copyright {
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+footer .redes a i:hover {
+    color: rgb(128, 128, 128);
+    transform: scale(1.4);
+}
+
+/* fin footer */
+
+/* inicio title */
+
+.title {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.title h1 {
+    color: rgb(255, 165, 0);
+}
+
+.title p {
+    margin-top: -10px;
+    color: rgb(128, 128, 128);
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 600px) {
+    .title h1 {
+        font-size: 60px;
+    }
+    .title p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .title h1 {
+        font-size: 90px;
+    }
+    .title p {
+        font-size: 25px;
+    }
+}
+
+/* fin title */

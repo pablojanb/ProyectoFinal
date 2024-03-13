@@ -1,0 +1,96 @@
+/* inicio contacto */
+
+.h2contacto {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.contacto {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin: 10px;
+}
+
+form {
+    font-family: "Oswald", sans-serif;
+}
+
+form label {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.botones input  {
+    margin: -15px 20px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info strong {
+    font-family: "Oswald", sans-serif;
+}
+
+.info iframe {
+    margin-bottom: 20px;
+}
+
+.srcontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .srcontact {
+        gap: 30px;
+    }
+    
+    .info iframe {
+        margin-bottom: 50px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .srcontact {
+        flex-wrap: nowrap;
+    }
+
+    .srcontact .contacto {
+        width: 60vw;
+    }
+
+    .srcontact .info {
+        width: 40vw;
+    }
+    
+    .info iframe {
+        margin-bottom: 50px;
+        height: 300px;
+    }
+
+    .contacto form input:not(.botonForm) {
+        width: 300px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+}
+
+/* fin contacto */
