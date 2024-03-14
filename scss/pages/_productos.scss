@@ -22,7 +22,7 @@
             color: map-get($colores, principal);
         }
         .card-text {
-            font-family: "Oswald", sans-serif;
+            font-family: $regularFont;
         }
         a {
             color: map-get($colores, principal);

@@ -4,21 +4,21 @@
     h2 {
         color: map-get($colores, principal);
         font-size: 25px;
-        font-family: "Oswald", sans-serif;
+        font-family: $regularFont;
     }
     h3 {
         font-family: "Protest Guerrilla", sans-serif;
         font-size: 28px;
     }
     p {
-        font-family: "Oswald", sans-serif;
+        font-family: $regularFont;
         font-size: 20px;
     }
     .cita{
         margin: 50px 0;
         text-align: center;
         strong {
-            font-family: "Oswald", sans-serif;
+            font-family: $regularFont;
         }
     }
 }

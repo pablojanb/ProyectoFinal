@@ -1,7 +1,7 @@
 .h2contacto {
     text-align: center;
     margin-bottom: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: $regularFont;
 }
 
 .srcontact {
@@ -16,15 +16,15 @@
         margin-bottom: 30px;
         margin: 10px;
         form {
-            font-family: "Oswald", sans-serif;
+            font-family: $regularFont;
             label {
-                font-family: "Oswald", sans-serif;
+                font-family: $regularFont;
                 font-weight: 500;
             }
             .botones {
                 display: flex;
                 justify-content: center;
-                font-family: "Oswald", sans-serif;
+                font-family: $regularFont;
                 font-weight: 500;
                 input  {
                     margin: -15px 20px;
@@ -40,7 +40,7 @@
             margin-bottom: 20px;
         }
         strong {
-            font-family: "Oswald", sans-serif;
+            font-family: $regularFont;
         }
     }
 }

@@ -3,7 +3,7 @@
         color: map-get($colores, terciario);
         text-align: center;
         margin-bottom: 20px;
-        font-family: "Oswald", sans-serif;
+        font-family: $regularFont;
     }
     .galeria {
         display: grid;
@@ -35,7 +35,7 @@
                     color: map-get($colores, secundario);
                 }
                 strong {
-                    font-family: "Oswald", sans-serif;
+                    font-family: $regularFont;
                 }
             }
         }
