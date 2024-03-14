@@ -22,7 +22,7 @@ main {
             width: 100%;
             text-align: center;
             span {
-                color: $colorppal;
+                color: map-get($colores, principal);
             }
         }
         .tarjeta--telecaster {
@@ -46,21 +46,21 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         width: 80%;
-        color: $colorsecundario;
+        color: map-get($colores, secundario);
         background-color: rgba(128, 128, 128, .3);
         padding: 10px;
         border-radius: 10%;
         font-size: 18px;
         font-family: "Oswald", sans-serif;
         a {
-            color: $colorsecundario;
+            color: map-get($colores, secundario);
             text-decoration: none;
-            background-color: $colorppal;
+            background-color: map-get($colores, principal);
             padding: 5px 20px;
             border-radius: 5%;
             text-align: end;
             &:hover {
-                background-color: $colorterciario;
+                background-color: map-get($colores, terciario);
                 transform: scale(1.2);
             }
         }

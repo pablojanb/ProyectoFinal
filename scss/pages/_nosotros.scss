@@ -2,7 +2,7 @@
 .nosotros {
     margin: 30px;
     h2 {
-        color: $colorppal;
+        color: map-get($colores, principal);
         font-size: 25px;
         font-family: "Oswald", sans-serif;
     }

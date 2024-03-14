@@ -1,6 +1,6 @@
 .clientes {
     h2 {
-        color: $colorterciario;
+        color: map-get($colores, terciario);
         text-align: center;
         margin-bottom: 20px;
         font-family: "Oswald", sans-serif;
@@ -32,7 +32,7 @@
                 text-align: center;
                 padding: 10px;
                 p {
-                    color: $colorsecundario;
+                    color: map-get($colores, secundario);
                 }
                 strong {
                     font-family: "Oswald", sans-serif;
@@ -46,7 +46,7 @@
         
         .img2 {
             grid-area: img2;
-            background-color: $colorppal;
+            background-color: map-get($colores, principal);
         }
         
         .img3 {
@@ -56,7 +56,7 @@
         
         .img4 {
             grid-area: img4;
-            background-color: $colorppal;
+            background-color: map-get($colores, principal);
         }
         
         .img5 {
@@ -66,7 +66,7 @@
         
         .img6 {
             grid-area: img6;
-            background-color: $colorppal;
+            background-color: map-get($colores, principal);
         }
     }
 }

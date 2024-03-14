@@ -19,20 +19,20 @@
             font-size: 30px;
         }
         .card-title {
-            color: $colorppal;
+            color: map-get($colores, principal);
         }
         .card-text {
             font-family: "Oswald", sans-serif;
         }
         a {
-            color: $colorppal;
-            background-color: $colorsecundario;
+            color: map-get($colores, principal);
+            background-color: map-get($colores, secundario);
             border: none;
             font-size: 20px;
             &:hover {
                 transform: scale(1.4);
-                background-color: $colorsecundario;
-                color: $colorppal;
+                background-color: map-get($colores, secundario);
+                color: map-get($colores, principal);
             }
         }
     }
