@@ -21,6 +21,10 @@
   font-family: "Protest Guerrilla", sans-serif;
 }
 
+.ofertas {
+  display: block;
+}
+
 /* inicio header */
 header {
   font-size: 25px;
