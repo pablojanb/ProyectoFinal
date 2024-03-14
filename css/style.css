@@ -26,10 +26,10 @@ header {
   font-size: 25px;
 }
 header span {
-  color: rgb(128, 128, 128);
+  color: #393e41;
 }
 header .bg-color {
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
 }
 header .navbar-brand {
   font-size: 25px;
@@ -42,7 +42,7 @@ header .nav-link {
 /* fin header */
 /* inicio footer */
 footer {
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
   text-align: center;
   padding: 5px;
 }
@@ -51,10 +51,10 @@ footer .redes {
   font-size: 25px;
 }
 footer .redes a {
-  color: rgb(255, 255, 255);
+  color: #ede6f2;
 }
 footer .redes a i:hover {
-  color: rgb(128, 128, 128);
+  color: #393e41;
   transform: scale(1.4);
 }
 footer .copyright {
@@ -70,11 +70,11 @@ footer .copyright {
   text-align: center;
 }
 .title h1 {
-  color: rgb(255, 165, 0);
+  color: #ffa500;
 }
 .title p {
   margin-top: -10px;
-  color: rgb(128, 128, 128);
+  color: #393e41;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
@@ -123,7 +123,7 @@ main .tarjeta p {
   text-align: center;
 }
 main .tarjeta p span {
-  color: rgb(255, 165, 0);
+  color: #ffa500;
 }
 main .tarjeta .tarjeta--telecaster .tarjeta__video {
   width: 100%;
@@ -143,7 +143,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
-  color: rgb(255, 255, 255);
+  color: #ede6f2;
   background-color: rgba(128, 128, 128, 0.3);
   padding: 10px;
   border-radius: 10%;
@@ -151,15 +151,15 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-family: "Oswald", sans-serif;
 }
 .calltoaction p a {
-  color: rgb(255, 255, 255);
+  color: #ede6f2;
   text-decoration: none;
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
   padding: 5px 20px;
   border-radius: 5%;
   text-align: end;
 }
 .calltoaction p a:hover {
-  background-color: rgb(128, 128, 128);
+  background-color: #393e41;
   transform: scale(1.2);
 }
 
@@ -240,21 +240,21 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-size: 30px;
 }
 .card .card-body .card-title {
-  color: rgb(255, 165, 0);
+  color: #ffa500;
 }
 .card .card-body .card-text {
   font-family: "Oswald", sans-serif;
 }
 .card .card-body a {
-  color: rgb(255, 165, 0);
-  background-color: rgb(255, 255, 255);
+  color: #ffa500;
+  background-color: #ede6f2;
   border: none;
   font-size: 20px;
 }
 .card .card-body a:hover {
   transform: scale(1.4);
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 165, 0);
+  background-color: #ede6f2;
+  color: #ffa500;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -266,7 +266,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   margin: 30px;
 }
 .nosotros h2 {
-  color: rgb(255, 165, 0);
+  color: #ffa500;
   font-size: 25px;
   font-family: "Oswald", sans-serif;
 }
@@ -287,7 +287,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 
 .clientes h2 {
-  color: rgb(0, 0, 0);
+  color: #393e41;
   text-align: center;
   margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
@@ -316,7 +316,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   padding: 10px;
 }
 .clientes .galeria .img .citaclientes p {
-  color: rgb(255, 255, 255);
+  color: #ede6f2;
 }
 .clientes .galeria .img .citaclientes strong {
   font-family: "Oswald", sans-serif;
@@ -327,7 +327,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img2 {
   grid-area: img2;
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
 }
 .clientes .galeria .img3 {
   grid-area: img3;
@@ -335,7 +335,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img4 {
   grid-area: img4;
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
 }
 .clientes .galeria .img5 {
   grid-area: img5;
@@ -343,7 +343,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img6 {
   grid-area: img6;
-  background-color: rgb(255, 165, 0);
+  background-color: #ffa500;
 }
 
 @media only screen and (min-width: 480px) {

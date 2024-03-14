@@ -22,7 +22,7 @@ main {
             width: 100%;
             text-align: center;
             span {
-                color: rgb(255, 165, 0);
+                color: $colorppal;
             }
         }
         .tarjeta--telecaster {
@@ -46,21 +46,21 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         width: 80%;
-        color: rgb(255, 255, 255);
+        color: $colorsecundario;
         background-color: rgba(128, 128, 128, .3);
         padding: 10px;
         border-radius: 10%;
         font-size: 18px;
         font-family: "Oswald", sans-serif;
         a {
-            color: rgb(255, 255, 255);
+            color: $colorsecundario;
             text-decoration: none;
-            background-color: rgb(255, 165, 0);
+            background-color: $colorppal;
             padding: 5px 20px;
             border-radius: 5%;
             text-align: end;
             &:hover {
-                background-color: rgb(128, 128, 128);
+                background-color: $colorterciario;
                 transform: scale(1.2);
             }
         }

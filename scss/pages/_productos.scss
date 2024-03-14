@@ -19,20 +19,20 @@
             font-size: 30px;
         }
         .card-title {
-            color: rgb(255, 165, 0);
+            color: $colorppal;
         }
         .card-text {
             font-family: "Oswald", sans-serif;
         }
         a {
-            color: rgb(255, 165, 0);
-            background-color: rgb(255, 255, 255);
+            color: $colorppal;
+            background-color: $colorsecundario;
             border: none;
             font-size: 20px;
             &:hover {
                 transform: scale(1.4);
-                background-color: rgb(255, 255, 255);
-                color: rgb(255, 165, 0);
+                background-color: $colorsecundario;
+                color: $colorppal;
             }
         }
     }
