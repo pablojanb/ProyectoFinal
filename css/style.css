@@ -24,6 +24,9 @@
 /* inicio header */
 header {
   font-size: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 header span {
   color: #393e41;
@@ -66,7 +69,7 @@ footer .copyright {
 /* fin footer */
 /* inicio title */
 .title {
-  margin-top: 80px;
+  margin-top: 35px;
   text-align: center;
 }
 .title h1 {
@@ -96,6 +99,27 @@ footer .copyright {
   }
 }
 /* fin title */
+.ofertas {
+  background-color: #4ce0b3;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: -16px;
+}
+.ofertas p {
+  font-family: "Oswald", sans-serif;
+  padding: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+  .ofertas {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ofertas {
+    font-size: 25px;
+  }
+}
 main {
   display: flex;
   flex-wrap: wrap;

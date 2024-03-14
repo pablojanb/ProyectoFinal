@@ -2,6 +2,9 @@
 
 header {
     font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     span {
         color: map-get($colores, terciario);
     }
@@ -50,7 +53,7 @@ footer {
 /* inicio title */
 
 .title {
-    margin-top: 80px;
+    margin-top: 35px;
     text-align: center;
     h1 {
         color: map-get($colores, principal);
@@ -82,3 +85,30 @@ footer {
 }
 
 /* fin title */
+
+// inicio ofertas
+
+.ofertas {
+    background-color: map-get($colores, cuaternario);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -16px;
+    p {
+        font-family: $regularFont;
+        padding: 1px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ofertas {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .ofertas {
+        font-size: 25px;
+    }
+}
+
+// fin ofertas
