@@ -265,9 +265,14 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 .nosotros {
   margin: 30px;
 }
-.nosotros h3 {
+.nosotros h2 {
   color: rgb(255, 165, 0);
+  font-size: 25px;
   font-family: "Oswald", sans-serif;
+}
+.nosotros h3 {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 28px;
 }
 .nosotros p {
   font-family: "Oswald", sans-serif;
