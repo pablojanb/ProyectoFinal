@@ -167,7 +167,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   justify-content: center;
   align-items: center;
   height: 200px;
-  background-image: url(../images/blackwhite.jpg);
+  background-image: url(../images/blackwhite.webp);
   background-size: cover;
   background-position: center;
 }
@@ -356,7 +356,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img1 {
   grid-area: img1;
-  background-image: url(../images/musicianpro.jpg);
+  background-image: url(../images/musicianpro.webp);
 }
 .clientes .galeria .img2 {
   grid-area: img2;
@@ -364,7 +364,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img3 {
   grid-area: img3;
-  background-image: url(../images/musician.jpg);
+  background-image: url(../images/musician.webp);
 }
 .clientes .galeria .img4 {
   grid-area: img4;
@@ -372,7 +372,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .clientes .galeria .img5 {
   grid-area: img5;
-  background-image: url(../images/musicianguitar.jpg);
+  background-image: url(../images/musicianguitar.webp);
 }
 .clientes .galeria .img6 {
   grid-area: img6;
