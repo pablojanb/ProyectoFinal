@@ -1,16 +1,12 @@
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include centrar (flex, wrap, center);
     .tarjeta {
         width: 80%;
         img {
             width: 100%;
         }
         .tarjeta__desc {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            @include centrar (flex, wrap, center);
             align-content: center;
             padding: 10px;
             audio {
@@ -42,9 +38,7 @@ main {
     background-size: cover;
     background-position: center;
     p {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @include centrar (flex, wrap, center);
         width: 80%;
         color: map-get($colores, secundario);
         background-color: rgba(128, 128, 128, .3);
