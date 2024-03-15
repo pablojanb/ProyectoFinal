@@ -25,6 +25,11 @@
   display: block;
 }
 
+.srcontact .contacto form .botones, .srcontact .contacto, .srcontact {
+  display: flex;
+  justify-content: center;
+}
+
 /* inicio header */
 header {
   font-size: 25px;
@@ -482,15 +487,11 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 
 .srcontact {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 .srcontact .contacto {
-  display: flex;
   text-align: center;
-  justify-content: center;
   margin-bottom: 30px;
   margin: 10px;
 }
@@ -502,8 +503,6 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-weight: 500;
 }
 .srcontact .contacto form .botones {
-  display: flex;
-  justify-content: center;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }

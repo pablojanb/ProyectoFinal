@@ -5,14 +5,12 @@
 }
 
 .srcontact {
-    display: flex;
+    @extend %centrar;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     .contacto {
-        display: flex;
+        @extend %centrar;
         text-align: center;
-        justify-content: center;
         margin-bottom: 30px;
         margin: 10px;
         form {
@@ -22,8 +20,7 @@
                 font-weight: 500;
             }
             .botones {
-                display: flex;
-                justify-content: center;
+                @extend %centrar;
                 font-family: $regularFont;
                 font-weight: 500;
                 input  {
