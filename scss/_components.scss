@@ -18,6 +18,29 @@ header {
         font-family: $regularFont;
         font-size: 20px;
     }
+    nav {
+        div {
+            a {
+                img {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        nav {
+            div {
+                a {
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* fin header */
