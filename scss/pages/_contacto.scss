@@ -19,14 +19,49 @@
                 font-family: $regularFont;
                 font-weight: 500;
             }
+            input {
+                border: none;
+                border-radius: 5%;
+                border-bottom: 1px solid map-get($colores, principal);
+                &:focus {
+                    border: none;
+                    outline: 2px solid map-get($colores, principal);
+                }
+            }
+            select {
+                border: none;
+                border-bottom: 1px solid map-get($colores, principal);
+                option {
+                    font-family: $regularFont;
+                }
+            }
             .botones {
                 @extend %centrar;
                 font-family: $regularFont;
                 font-weight: 500;
                 input  {
                     margin: -15px 20px;
-                    padding: 0 20px;
+                    padding: 0 10px;
                     margin-bottom: 25px;
+                    border: none;
+                    padding: 5px 20px;
+                    background-color: map-get($colores, principal);
+                    color: map-get($colores, secundario);
+                    border-radius: 10%;
+                    &:active {
+                        background-color: map-get($colores, terciario);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            textarea {
+                border: 1px solid map-get($colores, principal);
+                border-radius: 5%;
+                resize: none;
+                width: 200px;
+                &:focus {
+                    border: none;
+                    outline: 2px solid map-get($colores, principal);
                 }
             }
         }
@@ -40,6 +75,10 @@
             font-family: $regularFont;
         }
     }
+}
+
+::placeholder {
+    text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
@@ -58,14 +97,23 @@
 @media only screen and (min-width: 1024px) {
     .srcontact {
         flex-wrap: nowrap;
+        margin-bottom: 50px;
         .contacto {
             width: 60vw;
             form {
                 textarea {
-                    width: 400px;
+                    width: 300px;
                 }
                 input:not(.botonForm) {
                     width: 300px;
+                }
+                .botones {
+                    input  {
+                        &:hover {
+                            background-color: map-get($colores, terciario);
+                            transform: scale(1.2);
+                        }
+                    }
                 }
             }
         }

@@ -1,9 +1,37 @@
+// inicio ofertas
+
+.ofertas {
+    background-color: map-get($colores, cuaternario);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -16px;
+    p {
+        font-family: $regularFont;
+        color: map-get($colores, secundario);
+        padding: 1px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ofertas {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .ofertas {
+        font-size: 25px;
+    }
+}
+
+// fin ofertas
+
 /* inicio header */
 
 header {
     font-size: 25px;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 100;
     span {
         color: map-get($colores, terciario);
@@ -45,38 +73,10 @@ header {
 
 /* fin header */
 
-/* inicio footer */
-
-footer {
-    background-color: map-get($colores, principal);
-    text-align: center;
-    padding: 5px;
-    .redes {
-        word-spacing: 30px;
-        font-size: 25px;
-        a {
-            color: map-get($colores, secundario);
-            i {
-                &:hover {
-                    color: map-get($colores, terciario);
-                    transform: scale(1.4);
-                }
-            }
-        }
-    }
-    .copyright {
-        font-size: 16px;
-        font-family: $regularFont;
-        font-weight: 600;
-    }
-}
-
-/* fin footer */
-
 /* inicio title */
 
 .title {
-    margin-top: 25px;
+    margin: 40px 0;
     text-align: center;
     h1 {
         color: map-get($colores, principal);
@@ -109,29 +109,45 @@ footer {
 
 /* fin title */
 
-// inicio ofertas
+/* inicio footer */
 
-.ofertas {
-    background-color: map-get($colores, cuaternario);
-    font-size: 15px;
+footer {
+    background-color: map-get($colores, principal);
     text-align: center;
-    margin-bottom: -16px;
-    p {
-        font-family: $regularFont;
-        padding: 1px;
+    padding: 5px;
+    .redes {
+        word-spacing: 30px;
+        font-size: 25px;
+        a {
+            color: map-get($colores, secundario);
+            i {
+                &:active {
+                    color: map-get($colores, terciario);
+                    transform: scale(1.4);
+                }
+            }
+        }
     }
-}
-
-@media only screen and (min-width: 600px) {
-    .ofertas {
-        font-size: 20px;
+    .copyright {
+        font-size: 16px;
+        font-family: $regularFont;
+        font-weight: 600;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .ofertas {
-        font-size: 25px;
+    footer {
+        .redes {
+            a {  
+                i {
+                    &:hover {
+                        color: map-get($colores, terciario);
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
     }
 }
 
-// fin ofertas
+/* fin footer */

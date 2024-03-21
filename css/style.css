@@ -25,16 +25,38 @@
   display: block;
 }
 
-.srcontact .contacto form .botones, .srcontact .contacto, .srcontact {
+.srcontact .contacto form .botones, .srcontact .contacto, .srcontact, .calltoaction {
   display: flex;
   justify-content: center;
 }
 
+.ofertas {
+  background-color: #000000;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: -16px;
+}
+.ofertas p {
+  font-family: "Oswald", sans-serif;
+  color: #ede6f2;
+  padding: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+  .ofertas {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ofertas {
+    font-size: 25px;
+  }
+}
 /* inicio header */
 header {
   font-size: 25px;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 100;
 }
 header span {
@@ -60,33 +82,9 @@ header nav div a img {
   }
 }
 /* fin header */
-/* inicio footer */
-footer {
-  background-color: #ffa500;
-  text-align: center;
-  padding: 5px;
-}
-footer .redes {
-  word-spacing: 30px;
-  font-size: 25px;
-}
-footer .redes a {
-  color: #ede6f2;
-}
-footer .redes a i:hover {
-  color: #393e41;
-  transform: scale(1.4);
-}
-footer .copyright {
-  font-size: 16px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-}
-
-/* fin footer */
 /* inicio title */
 .title {
-  margin-top: 25px;
+  margin: 40px 0;
   text-align: center;
 }
 .title h1 {
@@ -116,27 +114,36 @@ footer .copyright {
   }
 }
 /* fin title */
-.ofertas {
-  background-color: #4ce0b3;
-  font-size: 15px;
+/* inicio footer */
+footer {
+  background-color: #ffa500;
   text-align: center;
-  margin-bottom: -16px;
+  padding: 5px;
 }
-.ofertas p {
+footer .redes {
+  word-spacing: 30px;
+  font-size: 25px;
+}
+footer .redes a {
+  color: #ede6f2;
+}
+footer .redes a i:active {
+  color: #393e41;
+  transform: scale(1.4);
+}
+footer .copyright {
+  font-size: 16px;
   font-family: "Oswald", sans-serif;
-  padding: 1px;
+  font-weight: 600;
 }
 
-@media only screen and (min-width: 600px) {
-  .ofertas {
-    font-size: 20px;
-  }
-}
 @media only screen and (min-width: 1024px) {
-  .ofertas {
-    font-size: 25px;
+  footer .redes a i:hover {
+    color: #393e41;
+    transform: scale(1.4);
   }
 }
+/* fin footer */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +151,7 @@ main {
 }
 main .tarjeta {
   width: 80%;
+  margin-bottom: 40px;
 }
 main .tarjeta img {
   width: 100%;
@@ -171,8 +179,6 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 
 .calltoaction {
-  display: flex;
-  justify-content: center;
   align-items: center;
   height: 200px;
   background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
@@ -196,10 +202,9 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   text-decoration: none;
   background-color: #ffa500;
   padding: 5px 20px;
-  border-radius: 5%;
   text-align: end;
 }
-.calltoaction p a:hover {
+.calltoaction p a:active {
   background-color: #393e41;
   transform: scale(1.2);
 }
@@ -259,57 +264,80 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   .calltoaction {
     height: 300px;
   }
+  .calltoaction p a:hover {
+    background-color: #393e41;
+    transform: scale(1.2);
+  }
 }
-.card {
-  margin-bottom: 10px;
+.col-sm {
+  margin-bottom: 100px;
+}
+.col-sm .card {
   border: none;
 }
-.card .acercar {
+.col-sm .card .acercar {
   overflow: hidden;
   text-align: center;
 }
-.card .acercar img {
+.col-sm .card .acercar img {
   height: 330px;
   width: auto;
   object-fit: contain;
   transition: 2s;
 }
-.card .acercar img:hover {
+.col-sm .card .acercar img:active {
   transform: scale(1.4);
 }
-.card .card-body h2 {
+.col-sm .card .card-body .card-title {
+  color: #ffa500;
   font-size: 30px;
 }
-.card .card-body .card-title {
-  color: #ffa500;
-}
-.card .card-body .card-text {
+.col-sm .card .card-body .card-text {
   font-family: "Oswald", sans-serif;
 }
-.card .card-body a {
+.col-sm .card .card-body a {
   color: #ffa500;
   background-color: #ede6f2;
   border: none;
   font-size: 20px;
 }
-.card .card-body a:hover {
+.col-sm .card .card-body a:active {
   transform: scale(1.4);
   background-color: #ede6f2;
   color: #ffa500;
 }
 
 @media only screen and (min-width: 1024px) {
-  .card-text {
+  .col-sm .card .acercar img:hover {
+    transform: scale(1.4);
+  }
+  .col-sm .card .card-body .card-text {
     font-size: 20px;
+  }
+  .col-sm .card .card-body a:hover {
+    transform: scale(1.4);
+    background-color: #ede6f2;
+    color: #ffa500;
   }
 }
 .nosotros {
   margin: 30px;
 }
+.nosotros .slogan {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nosotros .slogan img {
+  width: 100%;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
 .nosotros h2 {
   color: #ffa500;
   font-size: 25px;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .nosotros h3 {
   font-family: "Protest Guerrilla", sans-serif;
@@ -320,13 +348,44 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-size: 20px;
 }
 .nosotros .cita {
-  margin: 50px 0;
+  margin: 35px 0;
   text-align: center;
 }
 .nosotros .cita strong {
   font-family: "Oswald", sans-serif;
 }
+.nosotros .parrafo img {
+  width: 100%;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
 
+@media only screen and (min-width: 768px) {
+  .nosotros .slogan {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nosotros .slogan img {
+    width: 45%;
+  }
+  .nosotros .slogan p {
+    width: 45%;
+  }
+  .nosotros .parrafo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .nosotros .parrafo img {
+    width: 45%;
+  }
+  .nosotros .parrafo p {
+    width: 45%;
+    font-size: 18px;
+  }
+}
 .clientes h2 {
   color: #393e41;
   text-align: center;
@@ -349,9 +408,9 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 .clientes .galeria .img .citaclientes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  justify-content: center;
   align-content: center;
   text-align: center;
   padding: 10px;
@@ -510,14 +569,49 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
+.srcontact .contacto form input {
+  border: none;
+  border-radius: 5%;
+  border-bottom: 1px solid #ffa500;
+}
+.srcontact .contacto form input:focus {
+  border: none;
+  outline: 2px solid #ffa500;
+}
+.srcontact .contacto form select {
+  border: none;
+  border-bottom: 1px solid #ffa500;
+}
+.srcontact .contacto form select option {
+  font-family: "Oswald", sans-serif;
+}
 .srcontact .contacto form .botones {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
 .srcontact .contacto form .botones input {
   margin: -15px 20px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin-bottom: 25px;
+  border: none;
+  padding: 5px 20px;
+  background-color: #ffa500;
+  color: #ede6f2;
+  border-radius: 10%;
+}
+.srcontact .contacto form .botones input:active {
+  background-color: #393e41;
+  transform: scale(1.2);
+}
+.srcontact .contacto form textarea {
+  border: 1px solid #ffa500;
+  border-radius: 5%;
+  resize: none;
+  width: 200px;
+}
+.srcontact .contacto form textarea:focus {
+  border: none;
+  outline: 2px solid #ffa500;
 }
 .srcontact .info {
   text-align: center;
@@ -527,6 +621,10 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .srcontact .info strong {
   font-family: "Oswald", sans-serif;
+}
+
+::placeholder {
+  text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
@@ -541,15 +639,20 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 @media only screen and (min-width: 1024px) {
   .srcontact {
     flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
   .srcontact .contacto {
     width: 60vw;
   }
   .srcontact .contacto form textarea {
-    width: 400px;
+    width: 300px;
   }
   .srcontact .contacto form input:not(.botonForm) {
     width: 300px;
+  }
+  .srcontact .contacto form .botones input:hover {
+    background-color: #393e41;
+    transform: scale(1.2);
   }
   .srcontact .info {
     width: 40vw;

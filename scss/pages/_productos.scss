@@ -1,45 +1,65 @@
-.card {
-    margin-bottom: 10px;
-    border: none;
-    .acercar {
-        overflow: hidden;
-        text-align: center;
-        img {
-            height: 330px;
-            width: auto;
-            object-fit: contain;
-            transition: 2s;
-            &:hover {
-                transform: scale(1.4);
+.col-sm {
+    margin-bottom: 100px;
+    .card {
+        border: none;
+        .acercar {
+            overflow: hidden;
+            text-align: center;
+            img {
+                height: 330px;
+                width: auto;
+                object-fit: contain;
+                transition: 2s;
+                &:active {
+                    transform: scale(1.4);
+                }
             }
         }
-    }
-    .card-body {
-        h2 {
-            font-size: 30px;
-        }
-        .card-title {
-            color: map-get($colores, principal);
-        }
-        .card-text {
-            font-family: $regularFont;
-        }
-        a {
-            color: map-get($colores, principal);
-            background-color: map-get($colores, secundario);
-            border: none;
-            font-size: 20px;
-            &:hover {
-                transform: scale(1.4);
-                background-color: map-get($colores, secundario);
+        .card-body {
+            .card-title {
                 color: map-get($colores, principal);
+                font-size: 30px;
+            }
+            .card-text {
+                font-family: $regularFont;
+            }
+            a {
+                color: map-get($colores, principal);
+                background-color: map-get($colores, secundario);
+                border: none;
+                font-size: 20px;
+                &:active {
+                    transform: scale(1.4);
+                    background-color: map-get($colores, secundario);
+                    color: map-get($colores, principal);
+                }
             }
         }
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .card-text {
-        font-size: 20px;
-    }    
+    .col-sm {
+        .card {
+            .acercar {
+                img {
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+            .card-body {
+                .card-text {
+                    font-size: 20px;
+                }
+                a {
+                    &:hover {
+                        transform: scale(1.4);
+                        background-color: map-get($colores, secundario);
+                        color: map-get($colores, principal);
+                    }
+                }
+            }
+        }
+    }
 }
