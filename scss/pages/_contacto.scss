@@ -20,6 +20,7 @@
                 font-weight: 500;
             }
             input {
+                width: 100%;
                 border: none;
                 border-radius: 5%;
                 border-bottom: 1px solid map-get($colores, principal);
@@ -58,7 +59,7 @@
                 border: 1px solid map-get($colores, principal);
                 border-radius: 5%;
                 resize: none;
-                width: 200px;
+                width: 100%;
                 &:focus {
                     border: none;
                     outline: 2px solid map-get($colores, principal);

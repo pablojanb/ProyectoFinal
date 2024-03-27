@@ -25,7 +25,7 @@
   display: block;
 }
 
-.srcontact .contacto form .botones, .srcontact .contacto, .srcontact, .calltoaction {
+.srcontact .contacto form .botones, .srcontact .contacto, .srcontact {
   display: flex;
   justify-content: center;
 }
@@ -179,6 +179,10 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 
 .calltoaction {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 200px;
   background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
@@ -189,6 +193,8 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  gap: 5px;
   width: 80%;
   color: #ede6f2;
   background-color: rgba(128, 128, 128, 0.3);
@@ -202,7 +208,6 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   text-decoration: none;
   background-color: #ffa500;
   padding: 5px 20px;
-  text-align: end;
 }
 .calltoaction p a:active {
   background-color: #393e41;
@@ -217,6 +222,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
     height: 250px;
   }
   .calltoaction p {
+    gap: 20px;
     font-size: 19px;
   }
   .calltoaction p a {
@@ -241,6 +247,9 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   .tarjeta__video {
     width: 50%;
   }
+  .calltoaction p {
+    gap: 25px;
+  }
 }
 @media only screen and (min-width: 800px) {
   .tarjeta__desc p {
@@ -248,6 +257,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   }
   .calltoaction p {
     font-size: 25px;
+    gap: 30px;
   }
   .calltoaction {
     height: 250px;
@@ -263,6 +273,9 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   }
   .calltoaction {
     height: 300px;
+  }
+  .calltoaction p a {
+    margin: 0 40%;
   }
   .calltoaction p a:hover {
     background-color: #393e41;
@@ -570,6 +583,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-weight: 500;
 }
 .srcontact .contacto form input {
+  width: 100%;
   border: none;
   border-radius: 5%;
   border-bottom: 1px solid #ffa500;
@@ -607,7 +621,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   border: 1px solid #ffa500;
   border-radius: 5%;
   resize: none;
-  width: 200px;
+  width: 100%;
 }
 .srcontact .contacto form textarea:focus {
   border: none;
