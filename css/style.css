@@ -400,6 +400,14 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
     font-size: 18px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .nosotros .slogan p {
+    font-size: 25px;
+  }
+  .nosotros .parrafo p {
+    font-size: 25px;
+  }
+}
 .clientes h2 {
   color: #393e41;
   text-align: center;
