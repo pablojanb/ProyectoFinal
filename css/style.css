@@ -344,7 +344,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 .nosotros .slogan img {
   width: 100%;
   border-radius: 5%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .nosotros h2 {
   color: #ffa500;
@@ -371,7 +371,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 .nosotros .parrafo img {
   width: 100%;
   border-radius: 5%;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 @media only screen and (min-width: 768px) {
