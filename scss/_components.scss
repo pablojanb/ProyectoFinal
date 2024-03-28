@@ -64,30 +64,6 @@ header {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  header {
-    .navbar {
-      .container-fluid {
-        .navbar-brand {
-          img {
-            height: 60px;
-          }
-        }
-        .collapse {
-          .navbar-nav {
-            .nav-link {
-              &:hover {
-                color: map-get($colores, terciario);
-                transform: scale(1.1);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 /* fin header */
 
 /* inicio title */
