@@ -1,130 +1,130 @@
 .h2contacto {
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: $regularFont;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: $regularFont;
 }
 
 .srcontact {
+  @extend %centrar;
+  flex-wrap: wrap;
+  align-items: center;
+  .contacto {
     @extend %centrar;
-    flex-wrap: wrap;
-    align-items: center;
-    .contacto {
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 10px;
+    form {
+      font-family: $regularFont;
+      label {
+        font-family: $regularFont;
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-radius: 5%;
+        border-bottom: 1px solid map-get($colores, principal);
+        &:focus {
+          border: none;
+          outline: 2px solid map-get($colores, principal);
+        }
+      }
+      select {
+        border: none;
+        border-bottom: 1px solid map-get($colores, principal);
+        option {
+          font-family: $regularFont;
+        }
+      }
+      .botones {
         @extend %centrar;
-        text-align: center;
-        margin-bottom: 30px;
-        margin: 10px;
-        form {
-            font-family: $regularFont;
-            label {
-                font-family: $regularFont;
-                font-weight: 500;
-            }
-            input {
-                width: 100%;
-                border: none;
-                border-radius: 5%;
-                border-bottom: 1px solid map-get($colores, principal);
-                &:focus {
-                    border: none;
-                    outline: 2px solid map-get($colores, principal);
-                }
-            }
-            select {
-                border: none;
-                border-bottom: 1px solid map-get($colores, principal);
-                option {
-                    font-family: $regularFont;
-                }
-            }
-            .botones {
-                @extend %centrar;
-                font-family: $regularFont;
-                font-weight: 500;
-                input  {
-                    margin: -15px 20px;
-                    padding: 0 10px;
-                    margin-bottom: 25px;
-                    border: none;
-                    padding: 5px 20px;
-                    background-color: map-get($colores, principal);
-                    color: map-get($colores, secundario);
-                    border-radius: 10%;
-                    &:active {
-                        background-color: map-get($colores, terciario);
-                        transform: scale(1.2);
-                    }
-                }
-            }
-            textarea {
-                border: 1px solid map-get($colores, principal);
-                border-radius: 5%;
-                resize: none;
-                width: 100%;
-                &:focus {
-                    border: none;
-                    outline: 2px solid map-get($colores, principal);
-                }
-            }
+        font-family: $regularFont;
+        font-weight: 500;
+        input {
+          margin: -15px 20px;
+          padding: 0 10px;
+          margin-bottom: 25px;
+          border: none;
+          padding: 5px 20px;
+          background-color: map-get($colores, principal);
+          color: map-get($colores, secundario);
+          border-radius: 10%;
+          &:active {
+            background-color: map-get($colores, terciario);
+            transform: scale(1.2);
+          }
         }
+      }
+      textarea {
+        border: 1px solid map-get($colores, principal);
+        border-radius: 5%;
+        resize: none;
+        width: 100%;
+        &:focus {
+          border: none;
+          outline: 2px solid map-get($colores, principal);
+        }
+      }
     }
-    .info {
-        text-align: center;
-        iframe {
-            margin-bottom: 20px;
-            width: 80%;
-        }
-        strong {
-            font-family: $regularFont;
-        }
+  }
+  .info {
+    text-align: center;
+    iframe {
+      margin-bottom: 20px;
+      width: 80%;
     }
+    strong {
+      font-family: $regularFont;
+    }
+  }
 }
 
 ::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
-    .srcontact {
-        gap: 30px;
+  .srcontact {
+    gap: 30px;
+  }
+
+  .info {
+    iframe {
+      margin-bottom: 50px;
+      height: 300px;
     }
-    
-    .info {
-        iframe {
-            margin-bottom: 50px;
-            height: 300px;
-        }
-    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .srcontact {
-        flex-wrap: nowrap;
-        margin-bottom: 50px;
-        .contacto {
-            width: 60vw;
-            form {
-                textarea {
-                    width: 300px;
-                }
-                input:not(.botonForm) {
-                    width: 300px;
-                }
-                .botones {
-                    input  {
-                        &:hover {
-                            background-color: map-get($colores, terciario);
-                            transform: scale(1.2);
-                        }
-                    }
-                }
-            }
+  .srcontact {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    .contacto {
+      width: 60vw;
+      form {
+        textarea {
+          width: 300px;
         }
-        .info {
-            width: 40vw;
-            iframe {
-                margin-bottom: 50px;
-                height: 300px;
-            }
+        input:not(.botonForm) {
+          width: 300px;
         }
+        .botones {
+          input {
+            &:hover {
+              background-color: map-get($colores, terciario);
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
     }
+    .info {
+      width: 40vw;
+      iframe {
+        margin-bottom: 50px;
+        height: 300px;
+      }
+    }
+  }
 }

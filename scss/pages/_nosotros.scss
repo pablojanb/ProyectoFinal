@@ -1,71 +1,70 @@
-
 .nosotros {
-    margin: 30px;
-    .slogan {
-        display: flex;
-        flex-wrap: wrap;
-        img {
-            width: 100%;
-            border-radius: 5%;
-            margin-bottom: 20px;
-        }
+  margin: 30px;
+  .slogan {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      border-radius: 5%;
+      margin-bottom: 20px;
     }
-    h2 {
-        color: map-get($colores, principal);
-        font-size: 25px;
-        font-family: $regularFont;
-        margin-bottom: 40px;
-        text-align: center;
+  }
+  h2 {
+    color: map-get($colores, principal);
+    font-size: 25px;
+    font-family: $regularFont;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 28px;
+  }
+  p {
+    font-family: $regularFont;
+    font-size: 20px;
+  }
+  .cita {
+    margin: 35px 0;
+    text-align: center;
+    strong {
+      font-family: $regularFont;
     }
-    h3 {
-        font-family: "Protest Guerrilla", sans-serif;
-        font-size: 28px;
+  }
+  .parrafo {
+    img {
+      width: 100%;
+      border-radius: 5%;
+      margin: 20px 0;
     }
-    p {
-        font-family: $regularFont;
-        font-size: 20px;
-    }
-    .cita{
-        margin: 35px 0;
-        text-align: center;
-        strong {
-            font-family: $regularFont;
-        }
-    }
-    .parrafo {
-        img {
-            width: 100%;
-            border-radius: 5%;
-            margin: 20px 0;
-        }
-    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .nosotros {
-        .slogan {
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-            img {
-                width: 45%;
-            }
-            p {
-                width: 45%;
-            }
-        }
-        .parrafo {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 40px 0;
-            img {
-                width: 45%;
-            }
-            p {
-                width: 45%;
-                font-size: 18px;
-            }
-        }
+  .nosotros {
+    .slogan {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 45%;
+      }
+      p {
+        width: 45%;
+      }
     }
+    .parrafo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 40px 0;
+      img {
+        width: 45%;
+      }
+      p {
+        width: 45%;
+        font-size: 18px;
+      }
+    }
+  }
 }

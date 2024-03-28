@@ -1,27 +1,27 @@
 // inicio ofertas
 
 .ofertas {
-    background-color: map-get($colores, cuaternario);
-    font-size: 15px;
-    text-align: center;
-    margin-bottom: -16px;
-    p {
-        font-family: $regularFont;
-        color: map-get($colores, secundario);
-        padding: 1px;
-    }
+  background-color: map-get($colores, cuaternario);
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: -16px;
+  p {
+    font-family: $regularFont;
+    color: map-get($colores, secundario);
+    padding: 1px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .ofertas {
-        font-size: 20px;
-    }
+  .ofertas {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .ofertas {
-        font-size: 25px;
-    }
+  .ofertas {
+    font-size: 25px;
+  }
 }
 
 // fin ofertas
@@ -29,46 +29,46 @@
 /* inicio header */
 
 header {
+  font-size: 25px;
+  position: sticky;
+  top: -1px;
+  z-index: 100;
+  span {
+    color: map-get($colores, terciario);
+  }
+  .bg-color {
+    background-color: map-get($colores, principal);
+  }
+  .navbar-brand {
     font-size: 25px;
-    position: sticky;
-    top: -1px;
-    z-index: 100;
-    span {
-        color: map-get($colores, terciario);
-    }
-    .bg-color {
-        background-color: map-get($colores, principal);
-    }
-    .navbar-brand {
-        font-size: 25px;
-    }
-    .nav-link {
-        font-family: $regularFont;
-        font-size: 20px;
-    }
-    nav {
-        div {
-            a {
-                img {
-                    height: 40px;
-                }
-            }
+  }
+  .nav-link {
+    font-family: $regularFont;
+    font-size: 20px;
+  }
+  nav {
+    div {
+      a {
+        img {
+          height: 40px;
         }
+      }
     }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    header {
-        nav {
-            div {
-                a {
-                    img {
-                        height: 60px;
-                    }
-                }
-            }
+  header {
+    nav {
+      div {
+        a {
+          img {
+            height: 60px;
+          }
         }
+      }
     }
+  }
 }
 
 /* fin header */
@@ -76,35 +76,35 @@ header {
 /* inicio title */
 
 .title {
-    margin: 40px 0;
-    text-align: center;
-    h1 {
-        color: map-get($colores, principal);
-    }
-    p {
-        margin-top: -10px;
-        color: map-get($colores, terciario);
-        font-family: $regularFont;
-        font-weight: 500;
-    }
+  margin: 40px 0;
+  text-align: center;
+  h1 {
+    color: map-get($colores, principal);
+  }
+  p {
+    margin-top: -10px;
+    color: map-get($colores, terciario);
+    font-family: $regularFont;
+    font-weight: 500;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .title h1 {
-        font-size: 60px;
-    }
-    .title p {
-        font-size: 20px;
-    }
+  .title h1 {
+    font-size: 60px;
+  }
+  .title p {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .title h1 {
-        font-size: 90px;
-    }
-    .title p {
-        font-size: 25px;
-    }
+  .title h1 {
+    font-size: 90px;
+  }
+  .title p {
+    font-size: 25px;
+  }
 }
 
 /* fin title */
@@ -112,42 +112,42 @@ header {
 /* inicio footer */
 
 footer {
-    background-color: map-get($colores, principal);
-    text-align: center;
-    padding: 5px;
-    .redes {
-        word-spacing: 30px;
-        font-size: 25px;
-        a {
-            color: map-get($colores, secundario);
-            i {
-                &:active {
-                    color: map-get($colores, terciario);
-                    transform: scale(1.4);
-                }
-            }
+  background-color: map-get($colores, principal);
+  text-align: center;
+  padding: 5px;
+  .redes {
+    word-spacing: 30px;
+    font-size: 25px;
+    a {
+      color: map-get($colores, secundario);
+      i {
+        &:active {
+          color: map-get($colores, terciario);
+          transform: scale(1.4);
         }
+      }
     }
-    .copyright {
-        font-size: 16px;
-        font-family: $regularFont;
-        font-weight: 600;
-    }
+  }
+  .copyright {
+    font-size: 16px;
+    font-family: $regularFont;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    footer {
-        .redes {
-            a {  
-                i {
-                    &:hover {
-                        color: map-get($colores, terciario);
-                        transform: scale(1.4);
-                    }
-                }
-            }
+  footer {
+    .redes {
+      a {
+        i {
+          &:hover {
+            color: map-get($colores, terciario);
+            transform: scale(1.4);
+          }
         }
+      }
     }
+  }
 }
 
 /* fin footer */

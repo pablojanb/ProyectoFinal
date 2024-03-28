@@ -1,13 +1,11 @@
 $ofertas: si;
 
 @if $ofertas == si {
-    .ofertas {
-        display: block;
-    }
-}
-
-@else {
-    .ofertas {
-        display: none;
-    }
+  .ofertas {
+    display: block;
+  }
+} @else {
+  .ofertas {
+    display: none;
+  }
 }

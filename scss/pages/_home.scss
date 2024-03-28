@@ -1,143 +1,142 @@
 main {
-    @include centrar (flex, wrap, center);
-    .tarjeta {
-        width: 80%;
-        margin-bottom: 40px;
-        img {
-            width: 100%;
-        }
-        .tarjeta__desc {
-            @include centrar (flex, wrap, center);
-            align-content: center;
-            padding: 10px;
-            audio {
-                width: 100%;
-            }
-        }
-        p {
-            font-family: $regularFont;
-            width: 100%;
-            text-align: center;
-            span {
-                color: map-get($colores, principal);
-            }
-        }
-        .tarjeta--telecaster {
-            .tarjeta__video {
-                width: 100%;
-            }
-        }
+  @include centrar(flex, wrap, center);
+  .tarjeta {
+    width: 80%;
+    margin-bottom: 40px;
+    img {
+      width: 100%;
     }
+    .tarjeta__desc {
+      @include centrar(flex, wrap, center);
+      align-content: center;
+      padding: 10px;
+      audio {
+        width: 100%;
+      }
+    }
+    p {
+      font-family: $regularFont;
+      width: 100%;
+      text-align: center;
+      span {
+        color: map-get($colores, principal);
+      }
+    }
+    .tarjeta--telecaster {
+      .tarjeta__video {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .calltoaction {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+  background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
+  background-size: cover;
+  background-position: center;
+  p {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    height: 200px;
-    background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
-    background-size: cover;
-    background-position: center;
-    p {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 5px;
-        width: 80%;
-        color: map-get($colores, secundario);
-        background-color: rgba(128, 128, 128, .3);
-        padding: 10px;
-        border-radius: 10%;
-        font-size: 18px;
-        font-family: $regularFont;
-        a {
-            color: map-get($colores, secundario);
-            text-decoration: none;
-            background-color: map-get($colores, principal);
-            padding: 5px 20px;
-            &:active {
-                background-color: map-get($colores, terciario);
-                transform: scale(1.2);
-            }
-        }
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    width: 80%;
+    color: map-get($colores, secundario);
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: $regularFont;
+    a {
+      color: map-get($colores, secundario);
+      text-decoration: none;
+      background-color: map-get($colores, principal);
+      padding: 5px 20px;
+      &:active {
+        background-color: map-get($colores, terciario);
+        transform: scale(1.2);
+      }
     }
+  }
 }
 
 @media only screen and (min-width: 480px) {
-    .tarjeta__desc p {
-        font-size: 20px;
-    }
-    .tarjeta__video {
-        height: 250px;
-    }
-    .calltoaction p {
-        gap: 20px;
-        font-size: 19px;
-    }
-    .calltoaction p a {
-        font-size: 19px;
-    }
+  .tarjeta__desc p {
+    font-size: 20px;
+  }
+  .tarjeta__video {
+    height: 250px;
+  }
+  .calltoaction p {
+    gap: 20px;
+    font-size: 19px;
+  }
+  .calltoaction p a {
+    font-size: 19px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .tarjeta {
-        display: flex;
-        margin: 10px;
-    }
+  .tarjeta {
+    display: flex;
+    margin: 10px;
+  }
 
-    .tarjeta__img {
+  .tarjeta__img {
     width: 50%;
-
-    }
-    .tarjeta__desc {
+  }
+  .tarjeta__desc {
     text-align: center;
     width: 50%;
-    }
-    .tarjeta__desc audio {
-        width: 200px;
-    }
-    .tarjeta__video {
-        width: 50%;
-    }
-    .calltoaction p {
-        gap: 25px;
-    }
-} 
+  }
+  .tarjeta__desc audio {
+    width: 200px;
+  }
+  .tarjeta__video {
+    width: 50%;
+  }
+  .calltoaction p {
+    gap: 25px;
+  }
+}
 
 @media only screen and (min-width: 800px) {
-    .tarjeta__desc p {
-        font-size: 30px;
-    }
-    .calltoaction p {
-        font-size: 25px;
-        gap: 30px;
-    }
-    .calltoaction {
-        height: 250px;
-    }
+  .tarjeta__desc p {
+    font-size: 30px;
+  }
+  .calltoaction p {
+    font-size: 25px;
+    gap: 30px;
+  }
+  .calltoaction {
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .tarjeta__video {
-        width: 50%;
-        height: 300px;
-    }
-    .tarjeta__desc audio {
-        width: 350px;
-    }
-    .calltoaction {
-        height: 300px;
-        p {
-            a {
-                margin: 0 40%;
-                &:hover {
-                    background-color: map-get($colores, terciario);
-                    transform: scale(1.2);
-                }
-            }
+  .tarjeta__video {
+    width: 50%;
+    height: 300px;
+  }
+  .tarjeta__desc audio {
+    width: 350px;
+  }
+  .calltoaction {
+    height: 300px;
+    p {
+      a {
+        margin: 0 40%;
+        &:hover {
+          background-color: map-get($colores, terciario);
+          transform: scale(1.2);
         }
+      }
     }
+  }
 }
