@@ -31,19 +31,15 @@ main {
 }
 
 .calltoaction {
-  display: flex;
-  justify-content: center;
+  @include centrar(flex, wrap, center);
   align-content: center;
-  flex-wrap: wrap;
   align-items: center;
   height: 200px;
   background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
   background-size: cover;
   background-position: center;
   p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include centrar(flex, wrap, center);
     text-align: center;
     gap: 5px;
     width: 80%;

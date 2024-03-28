@@ -180,9 +180,9 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 
 .calltoaction {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
   align-items: center;
   height: 200px;
   background-image: url(../img/swiftriff-guitarras-guitarrista.webp);
@@ -569,6 +569,10 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
     height: 400px;
   }
 }
+::placeholder {
+  text-align: center;
+}
+
 .h2contacto {
   text-align: center;
   margin-bottom: 40px;
@@ -645,10 +649,6 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .srcontact .info strong {
   font-family: "Oswald", sans-serif;
-}
-
-::placeholder {
-  text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
