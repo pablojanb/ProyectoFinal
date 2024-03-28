@@ -71,7 +71,7 @@ header .navbar .container-fluid .navbar-brand img {
 header .navbar .container-fluid .collapse .navbar-nav .nav-link {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  color: white;
+  color: #ede6f2;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-link:active {
   color: #393e41;

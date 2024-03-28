@@ -47,7 +47,7 @@ header {
           .nav-link {
             font-size: 20px;
             font-family: $regularFont;
-            color: white;
+            color: map-get($colores, secundario);
             &:active {
               color: map-get($colores, terciario);
               transform: scale(1.1);
