@@ -633,6 +633,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
 }
 .srcontact .info iframe {
   margin-bottom: 20px;
+  width: 80%;
 }
 .srcontact .info strong {
   font-family: "Oswald", sans-serif;
