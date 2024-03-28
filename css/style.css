@@ -59,28 +59,28 @@ header {
   top: -1px;
   z-index: 100;
 }
-header .navbar {
+header span {
+  color: #393e41;
+}
+header .bg-color {
   background-color: #ffa500;
 }
-header .navbar .container-fluid .navbar-brand {
+header .navbar-brand {
   font-size: 25px;
 }
-header .navbar .container-fluid .navbar-brand img {
+header .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+header nav div a img {
   height: 40px;
 }
-header .navbar .container-fluid .collapse .navbar-nav .nav-link {
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  color: #ede6f2;
-}
-header .navbar .container-fluid .collapse .navbar-nav .nav-link:active {
-  color: #393e41;
-  transform: scale(1.1);
-}
-header .navbar .container-fluid button span {
-  color: #393e41;
-}
 
+@media only screen and (min-width: 1024px) {
+  header nav div a img {
+    height: 60px;
+  }
+}
 /* fin header */
 /* inicio title */
 .title {

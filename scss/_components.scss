@@ -33,31 +33,38 @@ header {
   position: sticky;
   top: -1px;
   z-index: 100;
-  .navbar {
+  span {
+    color: map-get($colores, terciario);
+  }
+  .bg-color {
     background-color: map-get($colores, principal);
-    .container-fluid {
-      .navbar-brand {
-        font-size: 25px;
+  }
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .nav-link {
+    font-family: $regularFont;
+    font-size: 20px;
+  }
+  nav {
+    div {
+      a {
         img {
           height: 40px;
         }
       }
-      .collapse {
-        .navbar-nav {
-          .nav-link {
-            font-size: 20px;
-            font-family: $regularFont;
-            color: map-get($colores, secundario);
-            &:active {
-              color: map-get($colores, terciario);
-              transform: scale(1.1);
-            }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    nav {
+      div {
+        a {
+          img {
+            height: 60px;
           }
-        }
-      }
-      button {
-        span {
-          color: map-get($colores, terciario);
         }
       }
     }
