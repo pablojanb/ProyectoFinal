@@ -283,7 +283,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   }
 }
 .col-sm {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .col-sm .card {
   border: none;
@@ -309,6 +309,7 @@ main .tarjeta .tarjeta--telecaster .tarjeta__video {
   font-family: "Oswald", sans-serif;
 }
 .col-sm .card .card-body a {
+  width: 50px;
   color: #ffa500;
   background-color: #ede6f2;
   border: none;

@@ -1,5 +1,5 @@
 .col-sm {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     .card {
         border: none;
         .acercar {
@@ -24,6 +24,7 @@
                 font-family: $regularFont;
             }
             a {
+                width: 50px;
                 color: map-get($colores, principal);
                 background-color: map-get($colores, secundario);
                 border: none;
