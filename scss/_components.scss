@@ -33,24 +33,31 @@ header {
   position: sticky;
   top: -1px;
   z-index: 100;
-  span {
-    color: map-get($colores, terciario);
-  }
-  .bg-color {
+  .navbar {
     background-color: map-get($colores, principal);
-  }
-  .navbar-brand {
-    font-size: 25px;
-  }
-  .nav-link {
-    font-family: $regularFont;
-    font-size: 20px;
-  }
-  nav {
-    div {
-      a {
+    .container-fluid {
+      .navbar-brand {
+        font-size: 25px;
         img {
           height: 40px;
+        }
+      }
+      .collapse {
+        .navbar-nav {
+          .nav-link {
+            font-size: 20px;
+            font-family: $regularFont;
+            color: white;
+            &:active {
+              color: map-get($colores, terciario);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      button {
+        span {
+          color: map-get($colores, terciario);
         }
       }
     }
@@ -59,11 +66,21 @@ header {
 
 @media only screen and (min-width: 1024px) {
   header {
-    nav {
-      div {
-        a {
+    .navbar {
+      .container-fluid {
+        .navbar-brand {
           img {
             height: 60px;
+          }
+        }
+        .collapse {
+          .navbar-nav {
+            .nav-link {
+              &:hover {
+                color: map-get($colores, terciario);
+                transform: scale(1.1);
+              }
+            }
           }
         }
       }
